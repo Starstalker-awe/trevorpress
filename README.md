@@ -13,32 +13,14 @@ const models = {
             super(kw, models.Page);
 
             this.title = kw.title;
-            
+            this.description = kw.description;
+            this.page = kw.page;
+            this.home = kw.home ?? false;
         }
-    }
-}
-
-function Page({...kw} = {}){
-    Page.objects = (_=>new QuerySet(DB.Page))()
-
-    const ObjMan = new ObjectManager("Model", kw);
-    Object.assign(this, ObjMan);
-
-    this.title = kw.title;
-    this.description = kw.description;
-    this.page = kw.page;
-    this.home = kw.home ?? false;
-
-    this._schema = {
-        title: String,
-        description: String,
-        page: String,
-        home: Boolean
-    };
-
-    save(){
-        if(this.home){Page.objects.update({home: false})}
-        return ObjMan.save();
+        save(){
+            if(this.home){this.ref.objects.update({home: false}, this.id)}
+            return super.save();
+        }
     }
 }
 ```
