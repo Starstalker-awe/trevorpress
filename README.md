@@ -1,5 +1,9 @@
 # Trevorpress
 
+## Project overview
+
+This project is a CMS, with the objective of being similar in capabilities to Wordpress, but built in Node.js.
+
 ## Database management
 
 ### Model syntax
