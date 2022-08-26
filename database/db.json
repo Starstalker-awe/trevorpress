@@ -1,0 +1,61 @@
+{
+	"User": [
+		{
+			"id": "dummy",
+			"username": "dummy",
+			"email": "travelingtrevor1@gmail.com",
+			"password": "123",
+			"passHashed": false,
+			"session": "e6296d20-32f6-4664-a677-5ecadb60ff57",
+			"staff": true,
+			"admin": true,
+			"author": true
+		}
+	],
+	"Template": [
+		{
+			"id": 0,
+			"title": "Base Template",
+			"template": "base",
+			"description": "HTML boilerplate",
+			"default": true,
+			"creator": {
+				"crit": {
+					"id": "dummy"
+				},
+				"ffunc": null
+			}
+		}
+	],
+	"Page": [
+		{
+			"title": "Homepage",
+			"description": "Site's homepage",
+			"home": true,
+			"page": "index",
+			"template": 0,
+			"creator": "dummy"
+		},
+		{
+			"title": "About Page",
+			"description": "Information about the creator",
+			"home": false,
+			"page": "about",
+			"template": 0,
+			"creator": {
+				"crit": {
+					"id": "dummy"
+				},
+				"ffunc": null
+			}
+		}
+	],
+	"Theme": [
+		{
+			"title": "Default",
+			"description": "Default theme",
+			"active": true,
+			"path": "default"
+		}
+	]
+}

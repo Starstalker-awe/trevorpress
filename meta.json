@@ -1,0 +1,63 @@
+{
+    "plugins": {
+        "trevorpress_forms": {
+            "name": "trevorpress_forms",
+            "version": "1.0.0",
+            "author": {
+                "name": "Trevor Yates",
+                "github": "Starstalker-awe"
+            },
+            "source": "/plugins/trevorpress_forms",
+            "description": "Implementation of forms, also a plugin test",
+            "additions": [
+                "models"
+            ],
+            "files": [
+                {
+                    "fname": "plugin.js",
+                    "exports": [
+                        "models"
+                    ]
+                }
+            ]
+        },
+        "subscribe_page": {
+            "id": "00161c66-d735-4efe-afcb-bf3c5882f521",
+            "name": "subscribe_page",
+            "version": "1.0.0",
+            "author": {
+                "name": "Trevor Yates",
+                "github": "Starstalker-awe"
+            },
+            "source": "/plugins/subscribe_page",
+            "description": "Adds a subscription page",
+            "additions": [
+                "views",
+                "templates"
+            ],
+            "dependencies": [
+                {
+                    "name": "trevorpress_forms",
+                    "verion": "1.0.0"
+                }
+            ],
+            "files": [
+                {
+                    "fname": "routes.js",
+                    "exports": [
+                        "views"
+                    ]
+                }
+            ]
+        }
+    },
+    "themes": {
+        "default": {
+            "route": "default",
+            "index": "index"
+        }
+    },
+    "meta": {
+        "active_theme": "default"
+    }
+}

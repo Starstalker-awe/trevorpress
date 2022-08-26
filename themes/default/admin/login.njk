@@ -1,0 +1,10 @@
+{% extends "../_templates/base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+    <form method='post' action='/admin/login'>
+        <input type='text' name='username' required autofocus>
+        <input type='password' name='password' required>
+        <input type='hidden' name='to' value='{{ to }}'>
+        <input type='submit' value='Login!'>
+    </form>
+{% endblock %}

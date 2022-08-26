@@ -1,0 +1,23 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "argon2-ffi": "^2.0.0",
+    "bcrypt": "^5.0.1",
+    "consolidate": "^0.16.0",
+    "cookie-session": "^2.0.0",
+    "express": "^5.0.0-beta.1",
+    "mocha": "^10.0.0",
+    "nunjucks": "^3.2.3",
+    "uuid": "^8.3.2"
+  }
+}
